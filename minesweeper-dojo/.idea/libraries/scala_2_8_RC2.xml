@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="scala 2.8 RC2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Applications/scala-2.8.0RC2/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../Applications/scala-2.8.0RC2/lib" recursive="false" />
+  </library>
+</component>
