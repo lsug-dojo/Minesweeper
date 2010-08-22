@@ -3,24 +3,42 @@ package com.assembla.lsug.dojo.minesweeper
 import org.junit.Assert.assertThat
 import org.hamcrest.CoreMatchers._
 import org.junit.{Ignore, Test}
+import java.lang.String
 
 class BoardReaderTest {
 
-	@Test
-	def testThatWeCanCreateABoardDesign() {
-	    val input = """|*...
-	    			   |....
-					   |.*..
-					   |....""" stripMargin
+  val oneLineInput: String = "*.."
 
-		val expectedBoard = """|*100
+  val input = """|*...
+	    			     |....
+					       |.*..
+					       |....""" stripMargin
+
+	val expectedBoard = """|*100
 							   |2210
 							   |1*10
 							   |1110""" stripMargin
 
+	@Test
+	def testThatWeCanCreateABoardDesign() {
+
 		val output = Board.transform(input)
 		assertThat( output, is(equalTo (expectedBoard)))
 	}
+
+  @Test
+  def testUpdateNeighbours(){
+     val output = Board.parse(oneLineInput)
+     val outputCells = Board.updateNeighbours(output)
+                         assertThat(outputCells.size, is(equalTo(1)))
+    outputCells.map(row => {
+         assertThat(row.size, is(equalTo(3)))
+    })
+
+         val expected: Board.Grid = List( new Cell(true, None) :: new Cell(false, Some(1)) :: new Cell(false, Some(0)) :: Nil )
+    assertThat(output, is(equalTo(expected)))
+  }
+
 	@Test
   @Ignore
 	def	testEmptyField(){
@@ -41,7 +59,8 @@ class BoardReaderTest {
 
 	@Test
 	def testParsing() {
-    val b = Board.parse("*..")
+
+    val b = Board.parse(oneLineInput)
 		assertThat(b.length, is(equalTo (1)))
     //assertThat(b.cols, is(equalTo (3)))
     //assertThat(b.render, is(equalTo ("*10")))

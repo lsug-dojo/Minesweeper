@@ -13,12 +13,23 @@ object Board {
     slots reduceLeft({_+_})
 /*     grid.foreach(row => {
       row.foreach(slot =>
-        outputString += codeFor(slot))
+        outputString += codeFor(slot))              (({new Cell(tru{new Cell(tru
     })
     outputString.reduce("", {_+_})
 */
     //outputString
 	}
+
+  def updateNeighbours(grid: Grid): Grid = {
+    val cells = scala.collection.mutable.ListBuffer[Cell]()
+
+    grid.iterator.next.iterator.sliding(3).map(processCell(_))
+  }
+  def processCell(cells : (Cell, Cell, Cell)) {
+      new Cell (cells._2.isMine, if (!cells._2.isMine) 
+        Some(List(cells._1.isMine, cells._3.isMine).count(_))
+        else None)
+  }
 
   def codeFor(row : List[Cell]):String = row match {
     case cell::rest if cell.isMine => "*" + codeFor(rest)
@@ -35,9 +46,10 @@ object Board {
 		}
 		in.split('\n').map(parseRow _).toList
 	}
+
 }
 
-class Cell(val isMine: Boolean) {
 
+case class Cell(val isMine: Boolean, val hint: Option[Int] = None) {
 
 }
