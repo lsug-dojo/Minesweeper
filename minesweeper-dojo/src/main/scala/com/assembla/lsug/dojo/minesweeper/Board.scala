@@ -1,40 +1,37 @@
 package com.assembla.lsug.dojo.minesweeper
 
 object Board {
-	type Grid = List[List[Cell]]
+
+	type Grid = Array[Array[Cell]]
+
 	def transform(s:String) : String = {
 
-   // val outputString = new scala.collection.mutable.ListBuffer[String]
     val grid = parse(s)
-//    val listOfInt: List[Int] = grid flatMap
-    
-    val slots: List[String] = for {row <- grid } yield codeFor(row)
 
-    slots reduceLeft({_+_})
-/*     grid.foreach(row => {
-      row.foreach(slot =>
-        outputString += codeFor(slot))              (({new Cell(tru{new Cell(tru
-    })
-    outputString.reduce("", {_+_})
-*/
-    //outputString
+    val transformedGrid = updateNeighbours(grid);
+
+    val slots: Array[String] = for {row <- grid } yield codeFor(row)
+
+    slots reduceLeft({_+'\n'+_})
+
 	}
-
-  def updateNeighbours(grid: Grid): Grid = {
-    val cells = scala.collection.mutable.ListBuffer[Cell]()
-
-    grid.iterator.next.iterator.sliding(3).map(processCell(_))
-  }
-  def processCell(cells : (Cell, Cell, Cell)) {
-      new Cell (cells._2.isMine, if (!cells._2.isMine) 
-        Some(List(cells._1.isMine, cells._3.isMine).count(_))
-        else None)
+  def updateNeighbours(grid: Grid) = {grid}
+  
+  def getNeighbourCells(grid: Grid, row: Int, col: Int) : Seq[Cell] = {
+    grid.slice(row-1, row+1) map {
+      _ slice(col-1, col+1)
+    }
   }
 
-  def codeFor(row : List[Cell]):String = row match {
-    case cell::rest if cell.isMine => "*" + codeFor(rest)
-    case _::rest => "0" + codeFor(rest)
-    case _  => ""
+  def processCell(cells : (Cell, Cell, Cell)) = {
+     null
+  }
+
+  def codeFor(row : Array[Cell]):String = {
+    row.map(_.isMine match {
+      case true => '*'
+      case false => '0'
+    }).mkString("")
   }
 
 	def parse(in: String): Grid = {
@@ -42,9 +39,9 @@ object Board {
 			row.map {
 				case '*' => new Cell(true)
 				case _   => new Cell(false)
-			} toList
+			} toArray
 		}
-		in.split('\n').map(parseRow _).toList
+		in.split('\n').map(parseRow _).toArray
 	}
 
 }
@@ -53,3 +50,11 @@ object Board {
 case class Cell(val isMine: Boolean, val hint: Option[Int] = None) {
 
 }
+
+
+
+
+
+
+
+

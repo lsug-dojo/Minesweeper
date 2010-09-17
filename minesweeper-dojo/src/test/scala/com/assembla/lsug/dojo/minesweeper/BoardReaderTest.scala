@@ -23,8 +23,20 @@ class BoardReaderTest {
 	def testThatWeCanCreateABoardDesign() {
 
 		val output = Board.transform(input)
+    assertThat( output.count( _ == '\n' ), is(3))
 		assertThat( output, is(equalTo (expectedBoard)))
 	}
+
+  @Test
+  def testGetNeighbourCells() {
+    val board = Board.parse(input)
+
+    val cornerCells:Seq[Cell] = Board.getNeighbourCells(board, 0,0);
+    assertThat(cornerCells.length, is(3));
+    val middleCells:Seq[Cell] = Board.getNeighbourCells(board, 2,2);
+    assertThat(cornerCells.length, is(8));
+
+  }
 
   @Test
   def testUpdateNeighbours(){
@@ -35,8 +47,8 @@ class BoardReaderTest {
          assertThat(row.size, is(equalTo(3)))
     })
 
-         val expected: Board.Grid = List( new Cell(true, None) :: new Cell(false, Some(1)) :: new Cell(false, Some(0)) :: Nil )
-    assertThat(output, is(equalTo(expected)))
+    // val expected: Board.Grid = List( new Cell(true, None) :: new Cell(false, Some(1)) :: new Cell(false, Some(0)) :: Nil )
+    // assertThat(output, is(equalTo(expected)))
   }
 
 	@Test
@@ -59,12 +71,25 @@ class BoardReaderTest {
 
 	@Test
 	def testParsing() {
+    val expectedGrid:Array[Array[Cell]]  = Array(Array(Cell(true),Cell(false),Cell(false)))
 
     val b = Board.parse(oneLineInput)
-		assertThat(b.length, is(equalTo (1)))
-    //assertThat(b.cols, is(equalTo (3)))
-    //assertThat(b.render, is(equalTo ("*10")))
+		// assertThat(b.length, is(equalTo (1)))
+
+    assertThat(b, is(equalTo (expectedGrid)))
 	}
+
+  @Test
+  def test2LiveGridParsing() {
+
+    val expectedGrid = Array(Array(Cell(true),Cell(false),Cell(false)),
+                             Array(Cell(false),Cell(true),Cell(true)))
+    val twoLines = "*..\n.**"
+
+    val b = Board.parse(twoLines)
+
+    assertThat(b, is(expectedGrid))
+  }
 
 /*  The following tests have been commented out as they represent how something can be coded
     and not the intent of the tests.  It is recommnended that the following tests be written
