@@ -1,3 +1,10 @@
 minesweeper-dojo/target/
 minesweeper-dojo/.idea/dictionaries/johnny.xml
-
+target
+lib_managed
+src_managed 
+project/boot/ 
+project/build/target
+**/lib_managed
+**/src_managed
+.ensime
