@@ -2,9 +2,9 @@ package com.assembla.lsug.dojo.minesweeper
 
 object Board {
 
-	type Grid = Array[Array[Cell]]
+  type Grid = Array[Array[Cell]]
 
-	def transform(s:String) : String = {
+  def transform(s:String) : String = {
 
     val grid = parse(s)
 
@@ -14,17 +14,22 @@ object Board {
 
     slots reduceLeft({_+'\n'+_})
 
-	}
+  }
+
   def updateNeighbours(grid: Grid) = {grid}
   
   def getNeighbourCells(grid: Grid, row: Int, col: Int) : Seq[Cell] = {
+    // TODO: This returns an Array[Array[Cell]] but we need Seq[Cell]
+    /*
     grid.slice(row-1, row+1) map {
       _ slice(col-1, col+1)
     }
+    */
+    Seq(new Cell(false)) // Just to make it compile so
   }
 
   def processCell(cells : (Cell, Cell, Cell)) = {
-     null
+    null
   }
 
   def codeFor(row : Array[Cell]):String = {
@@ -34,15 +39,15 @@ object Board {
     }).mkString("")
   }
 
-	def parse(in: String): Grid = {
-		def parseRow(row: String) = {
-			row.map {
-				case '*' => new Cell(true)
-				case _   => new Cell(false)
-			} toArray
-		}
-		in.split('\n').map(parseRow _).toArray
-	}
+  def parse(in: String): Grid = {
+    def parseRow(row: String) = {
+      row.map {
+	case '*' => new Cell(true)
+	case _   => new Cell(false)
+      } toArray
+    }
+    in.split('\n').map(parseRow _).toArray
+  }
 
 }
 
@@ -50,11 +55,3 @@ object Board {
 case class Cell(val isMine: Boolean, val hint: Option[Int] = None) {
 
 }
-
-
-
-
-
-
-
-
