@@ -6,12 +6,12 @@
         <option name="takeFromSettings" value="true" />
         <option name="myScalaCompilerJarPaths">
           <array>
-            <option value="$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0.Beta1/scala-compiler-2.8.0.Beta1.jar" />
+            <option value="/opt/scala/current/lib/scala-compiler.jar" />
           </array>
         </option>
         <option name="myScalaSdkJarPaths">
           <array>
-            <option value="$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0.Beta1/scala-library-2.8.0.Beta1.jar" />
+            <option value="/opt/scala/current/lib/scala-library.jar" />
           </array>
         </option>
       </configuration>
@@ -27,10 +27,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Maven: org.scala-lang:scala-compiler:2.8.0.Beta1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.scala-lang:scala-library:2.8.0.Beta1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Maven: junit:junit:4.8.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.hamcrest:hamcrest-all:1.2" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file:///opt/scala/current/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file:///opt/scala/current/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

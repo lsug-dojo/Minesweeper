@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala" line="53" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala" line="59" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7fc0370c-1e2c-4cba-9768-d3db22b1b4fc" name="Default" comment="" />
-    <ignored path="minesweeper-dojo.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="minesweeper-dojo.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,16 @@
       <file leaf-file-name="BoardReaderTest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="6" selection-start="626" selection-end="626" vertical-scroll-proportion="-3.44">
+            <state line="24" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="25" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +89,7 @@
       <file leaf-file-name="Board.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="438" selection-end="438" vertical-scroll-proportion="0.52894735">
+            <state line="51" column="23" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.24179104">
               <folding />
             </state>
           </provider>
@@ -93,6 +102,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -100,11 +112,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/CoalmineCanary.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/CoalmineCanaryTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/test/CoalmineCanary.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/scala/test/CoalmineCanaryTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Minesweeper.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/MinesweeperTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/BoardReader.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala" />
       </list>
@@ -150,7 +162,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -162,6 +174,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,13 +253,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -256,9 +268,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -271,72 +283,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.BoardReaderTest">
-    <configuration default="false" name="BoardReaderTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="minesweeper-dojo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
-      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardReaderTest.testParsing" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="minesweeper-dojo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
-      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
-      <option name="METHOD_NAME" value="testParsing" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardReaderTest.testParseTwoRows" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="snapshooter" />
-      <module name="minesweeper-dojo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
-      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
-      <option name="METHOD_NAME" value="testParseTwoRows" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="BoardReaderTest.testEmptyRow" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="snapshooter" />
       <module name="minesweeper-dojo" />
@@ -367,6 +313,72 @@
       <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
       <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
       <option name="METHOD_NAME" value="testEmptyString" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardReaderTest.testUpdateNeighbours" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="minesweeper-dojo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
+      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
+      <option name="METHOD_NAME" value="testUpdateNeighbours" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardReaderTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="minesweeper-dojo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
+      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardReaderTest.testGetNeighbourCells" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="snapshooter" />
+      <module name="minesweeper-dojo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.assembla.lsug.dojo.minesweeper" />
+      <option name="MAIN_CLASS_NAME" value="com.assembla.lsug.dojo.minesweeper.BoardReaderTest" />
+      <option name="METHOD_NAME" value="testGetNeighbourCells" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -557,13 +569,13 @@
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BoardReaderTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testParsing" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testParseTwoRows" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyRow" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyString" />
-      <item index="5" class="java.lang.String" itemvalue="Scala Compilation Server.FastCompiler" />
-      <item index="6" class="java.lang.String" itemvalue="Scala Console.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyRow" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyString" />
+      <item index="2" class="java.lang.String" itemvalue="Scala Compilation Server.FastCompiler" />
+      <item index="3" class="java.lang.String" itemvalue="Scala Console.Unnamed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testUpdateNeighbours" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BoardReaderTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testGetNeighbourCells" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -612,25 +624,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1024" height="767" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6602941" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3349359" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3344426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24532901" sideWeight="0.64220184" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967507" sideWeight="0.6602941" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.301381" sideWeight="0.2735294" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897436" sideWeight="0.60399336" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25846153" sideWeight="0.2735294" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4599359" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3843594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -672,19 +684,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="49" selection-start="1696" selection-end="1696" vertical-scroll-proportion="1.1752021" />
+        <state line="38" column="25" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="626" selection-end="626" vertical-scroll-proportion="-3.44">
+        <state line="24" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="438" selection-end="438" vertical-scroll-proportion="0.52894735">
+        <state line="51" column="23" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.24179104">
           <folding />
         </state>
       </provider>

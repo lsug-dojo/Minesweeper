@@ -31,10 +31,16 @@ class BoardReaderTest {
   def testGetNeighbourCells() {
     val board = Board.parse(input)
 
-    val cornerCells:Seq[Cell] = Board.getNeighbourCells(board, 0,0);
+    var cornerCells:Seq[Cell] = Board.getNeighbourCells(board, 0,0);
+    assertThat(cornerCells.length, is(3));
+    cornerCells = Board.getNeighbourCells(board, 0,3);
+    assertThat(cornerCells.length, is(3));
+    cornerCells = Board.getNeighbourCells(board, 3,0);
+    assertThat(cornerCells.length, is(3));
+    cornerCells = Board.getNeighbourCells(board, 0,3);
     assertThat(cornerCells.length, is(3));
     val middleCells:Seq[Cell] = Board.getNeighbourCells(board, 2,2);
-    assertThat(cornerCells.length, is(8));
+    assertThat(middleCells.length, is(8));
 
   }
 
@@ -47,8 +53,8 @@ class BoardReaderTest {
          assertThat(row.size, is(equalTo(3)))
     })
 
-    // val expected: Board.Grid = List( new Cell(true, None) :: new Cell(false, Some(1)) :: new Cell(false, Some(0)) :: Nil )
-    // assertThat(output, is(equalTo(expected)))
+     val expected: Board.Grid = Array(Array(Cell(true, None), Cell(false, Some(1)), Cell(false, Some(0)))) 
+     assertThat(output, is(equalTo(expected)))
   }
 
 	@Test
