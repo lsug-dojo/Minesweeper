@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7fc0370c-1e2c-4cba-9768-d3db22b1b4fc" name="Default" comment="" />
-    <ignored path=".idea/workspace.xml" />
     <ignored path="minesweeper-dojo.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="BoardReaderTest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+            <state line="130" column="1" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="Board.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="23" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.24179104">
+            <state line="76" column="0" selection-start="1740" selection-end="1740" vertical-scroll-proportion="3.4131737">
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/MinesweeperTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/BoardReader.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala" />
       </list>
     </option>
   </component>
@@ -571,11 +571,11 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyRow" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testEmptyString" />
-      <item index="2" class="java.lang.String" itemvalue="Scala Compilation Server.FastCompiler" />
-      <item index="3" class="java.lang.String" itemvalue="Scala Console.Unnamed" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testUpdateNeighbours" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BoardReaderTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testGetNeighbourCells" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testUpdateNeighbours" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardReaderTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardReaderTest.testGetNeighbourCells" />
+      <item index="5" class="java.lang.String" itemvalue="Scala Compilation Server.FastCompiler" />
+      <item index="6" class="java.lang.String" itemvalue="Scala Console.Unnamed" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -624,7 +624,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -632,14 +632,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6602941" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3344426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3338898" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24532901" sideWeight="0.64220184" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897436" sideWeight="0.60399336" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25846153" sideWeight="0.2735294" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3843594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3839733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -684,21 +684,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="25" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="38" column="25" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/assembla/lsug/dojo/minesweeper/BoardReaderTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+        <state line="130" column="1" selection-start="3405" selection-end="3405" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/assembla/lsug/dojo/minesweeper/Board.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.24179104">
+        <state line="76" column="0" selection-start="1740" selection-end="1740" vertical-scroll-proportion="3.4131737">
           <folding />
         </state>
       </provider>
